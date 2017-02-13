@@ -11,7 +11,7 @@ PCB Production
 ==============
 Choose the service you would ever like. I have uploaded the design to OSHPark, too.
 VERY IMPORTANT: The substrate thickness has to be as thin as possible.
-The PCB is design to sit between lifted pins of the IT6613 (the HDMI transmitter) and OSSC-PCB. Just look at the installation pictures to get an idea ;)
+The PCB for v1.3 is design to sit between lifted pins of the IT6613 (the HDMI transmitter) and OSSC-PCB (just look at the installation pictures to get an idea ;)). With v1.5 the OSSC comes with jumpers which are connected to the appropriate pins of the IT6613E. The add-on sits on top of the jumpers (don't forget to open them). 
 I have produced the PCBs with OSHPark and have chosen 0.8mm thickness. The PCB must not be thicker.
 Link to PCB at OSHPark:
 - https://oshpark.com/shared_projects/rmFBAKyo (for v1.3)
@@ -48,19 +48,21 @@ here is my choice which gives a cut-off frequency of 47.938kHz.
 
 PCB-Installation
 =================
-(see pictures; assumes that at least the SCART connector has been desoldered)
+(see pictures; assumes that at least the SCART connector has been desoldered for v1.3 and v1.5 without wired connection to the SCART)
 01 - v1.3 - bend up pins 9, 10 and 11 of the IT6613 (v1.3 only!!!) (and eventually pin 5 - see External MCLK)
    - v1.5 - cut three wires between each pair of solder joints marked with I2S, WS and SCK (v1.5 only) (eventually lift pin 5 of the IT6613E - see External MCLK)
 02 - make a placement check (might look different between v1.3 and v1.5)
-03 - cut off the plastic around pin 2, 4 and 6 of the SCART connector if needed
-04 - solder the IT6613 into place (if not done yet) and approximately fix the audio pcb into place (v1.5 does not sit under some pins)
-05 - solder the SCART plug into place and solder the audio PCB onto the SCART connector (remind to check the pin assignment at the IT6613 during soldering the first leg)
+03 - cut off the plastic around pin 2, 4 and 6 of the SCART connector (not needed if you have the version with wired connection to the SCART, e.g. if you bought your board from VGP)
+04 - solder the IT6613 into place (if not done yet) and approximately fix the audio pcb into place (v1.5 does not sit under the  pins)
+05 - solder the SCART plug into place and solder the audio PCB onto the SCART connector (remind to check the pin / jumper assignment at the IT6613 during soldering the first leg)
+   - v1.5: make sure that you don't reconnect the jumpers to GND with your solder
+   - v1.5 with wired connection to SCART: solder three pins to the SCART plug which replaces the 'fork' (L <-> pin 6, GND <-> pin 4, R <-> pin 2)
 06 - v1.3 - solder pin 9, 10 and 11 of the IT6613 onto the audio PCB (v1.3 only)
    - v1.5 - solder the three top solder joints on the OSSC PCB (I2S, WS and SCK) to the DIY audio PCB (v1.5 only)
 07 - connect the wires
 08 - 5V and 3.3V can be get from U5
 09 - 27MHz from the crystal oscillator (pin between U7 and U9)
-10 - Pin 5 of the IT6613E lifted and connected to R31 (top pad)
+10 - Pin 5 of the IT6613E lifted and connected to R31 (top pad) (only if you want to use the external MCLK)
 
 
 External MCLK (read update, too)
