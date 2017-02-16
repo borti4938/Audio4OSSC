@@ -7,7 +7,7 @@ Before you start, check the following points:
 - Bought a a v1.3-DIY/DVI OSSC?  
   -> If yes, please consider additional notes.  
   
-The pictures assumes that you have OSSC board and SCART connector.  
+The pictures assumes that you have the SCART connector desoldered from the OSSC board.  
 Now you can start :)  
   
 01 - cut three wires between each pair of solder joints marked with I2S, WS and SCK  
